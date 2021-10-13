@@ -66,19 +66,19 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN/d' .config  #删除配置项阿里DDNS
         sed -i '/CONFIG_FIRMWARE_INCLUDE_V2RAY/d' .config  #集成v2ray执行文件（3.8M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TROJAN/d' .config  #集成trojan执行文件(1.1M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_KOOLPROXY/d' .config   #KP广告过滤 
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDY/d' .config  #在线文件管理服务
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDYBIN/d' .config  #集成caddu执行文件，此文件有13M,请注意固件大小。如果不集成，会从网上下载下来执行，不影响正常使用
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME/d' .config
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_KOOLPROXY/d' .config   #KP广告过滤 
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDY/d' .config  #在线文件管理服务
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDYBIN/d' .config  #集成caddu执行文件，此文件有13M,请注意固件大小。如果不集成，会从网上下载下来执行，不影响正常使用
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_WYY/d' .config  #网易云解锁
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_WYY/d' .config  #网易云解锁
         sed -i '/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d' .config  #网易云解锁GO版本执行文件（4M多）注意固件超大小,不集成会自动下载
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_ZEROTIER/d' .config  #zerotier ~1.3M
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE/d' .config  #openssl
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_ZEROTIER/d' .config  #zerotier ~1.3M
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE/d' .config  #openssl
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config #删除openvpn
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL/d' .config   #Aria
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA/d' .config  #Aria
-		    sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config   #QOS
+		sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config   #QOS
 		
 		
         ######################################################################
