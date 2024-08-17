@@ -80,6 +80,8 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL/d' .config   #Aria
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA/d' .config  #Aria
         sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config   #QOS
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_WIREGUARD/d' .config   #WIREGUARD
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_XRAY/d' .config  #集成XRAY执行文
         
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         ######################################################################
@@ -113,7 +115,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config #Aria
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> .config #Aria
         echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config #QOS
-        
+        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >> .config #WIREGUARD
+        echo "CONFIG_FIRMWARE_INCLUDE_XRAY=y" >> .config #XRAY
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
