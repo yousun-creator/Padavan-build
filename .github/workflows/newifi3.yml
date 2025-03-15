@@ -34,7 +34,8 @@ jobs:
         liblz4-dev liblz4-tool liblzo2-dev
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/yousun-creator/rt-n56u.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/yousun-creator/Padavan-KVR.git /opt/rt-n56u
+        # git clone --depth=1 https://github.com/yousun-creator/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
