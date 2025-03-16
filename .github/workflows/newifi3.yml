@@ -37,7 +37,7 @@ jobs:
         git clone --depth=1 https://github.com/yousun-creator/Padavan-KVR.git /opt/rt-n56u
         # git clone --depth=1 https://github.com/yousun-creator/rt-n56u.git /opt/rt-n56u
         git clone --depth=1 https://github.com/yousun-creator/Padavan-KVR2.git /opt/rt-n56u2
-        cp /opt/rt-n56u2/trunk/user/msd_lite /opt/rt-n56u/trunk/user/msd_lite
+        cp -r /opt/rt-n56u2/trunk/user/msd_lite /opt/rt-n56u/trunk/user/msd_lite
         rm -rf /opt/rt-n56u2
         #添加msd_lite
         cd /opt/rt-n56u/toolchain-mipsel
